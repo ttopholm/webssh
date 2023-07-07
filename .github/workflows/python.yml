@@ -54,7 +54,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/ttopholm/home-assistent-monta
+          images: ghcr.io/ttopholm/webssh
           tags: latest
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
