@@ -10,6 +10,7 @@ env:
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
+  CRYPTOGRAPHY_DONT_BUILD_RUST: 1
   
 jobs:
   ruff:
