@@ -7,7 +7,7 @@ ADD . /code
 WORKDIR /code
 RUN \
   export CRYPTOGRAPHY_DONT_BUILD_RUST=1 && \
-  apk add --no-cache libc-dev libffi-dev gcc make && \
+  apk add --no-cache libc-dev libffi-dev gcc openssl-dev cargo make && \
   pip install -r requirements.txt --no-cache-dir && \
   apk del gcc libc-dev libffi-dev && \
   addgroup webssh && \
